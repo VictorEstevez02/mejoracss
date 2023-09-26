@@ -1,0 +1,15 @@
+<h2>DETALLE DE USUARIO</h2>
+
+<div *ngIf="users$ |async as user">
+  <label>ID : {{user.id}} </label>
+  <P></P>
+  <label>NAME : {{user.name.firstname+" "  +  user.name.lastname}} </label>
+  <p></p>
+  <label>USERNAME : {{user.username}} </label>
+  <P></P>
+  <label>EMAIL : {{user.email}} </label>
+  <P></P>
+  <label>PASSWORD : {{user.password}} </label>
+  <P></P>
+  <label>PHONE : {{user.phone}} </label>
+</div>

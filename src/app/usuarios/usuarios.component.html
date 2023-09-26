@@ -1,0 +1,9 @@
+<h2> {{title}} </h2>
+
+<app-usuarios-filter (users)="filter($event)"></app-usuarios-filter>
+
+<ul *ngFor="let user of users$ |async">
+  <li>
+    <a [routerLink]="['/userDetail',user.id]"> {{user.name.firstname+" "  +  user.name.lastname}} </a>
+  </li>
+   </ul>

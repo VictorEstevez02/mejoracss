@@ -1,0 +1,15 @@
+<h2 class="titulo">{{title}} </h2>
+<P></P>
+<a href="/agregarCliente" class="link">AGREGAR CLIENTE</a>
+<P></P>
+<app-filter  (filterProducts)="operacionProducto($event)"></app-filter>
+<div class="div">
+<ul *ngFor="let producto of  productos$ |async" >
+  <li>
+    <a [routerLink]="['/detalleDeProducto',producto.id]" class="a"> {{producto.category}} {{producto.title}} {{producto.price  | currency}} </a>
+    <p></p>
+    <a [routerLink]="['/editarProducto',producto.id]">EDITAR</a>
+  </li>
+</ul>
+</div>
+

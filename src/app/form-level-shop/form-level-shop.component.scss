@@ -1,0 +1,40 @@
+.div{
+  margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+    width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.input{
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: blue;
+}
+
+h2{
+  color: blue;
+  font-size: 45px;
+  margin-right: 500px;
+  width: 500px;
+  margin-left: 400px;
+}
+
+label{
+  color: blue;
+}
+
+button{
+  margin-left: 400px;
+  height: 36px;
+  width: 516px;
+  margin-right: 500px;
+  border-radius: 10px;
+  border-color: blue;
+}
+
+

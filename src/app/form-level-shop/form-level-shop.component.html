@@ -1,0 +1,36 @@
+<h2>AGREGAR PRODUCTO</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSumbmit(form.value)">
+
+  <div class="div">
+
+<div>
+  <label>ID :</label>
+  <input type="number" class="input" formControlName = "id"required>
+</div>
+
+<div>
+  <label>CATEGORIA :</label>
+  <input type="text" class="input" formControlName = "category"required>
+</div>
+
+<div>
+  <label>NOMBRE :</label>
+  <input type="text" class="input" formControlName = "title"required>
+</div>
+
+<div>
+  <label>MARCA :</label>
+  <input type="text" class="input" formControlName = "marca">
+</div>
+
+<div>
+  <label>PRECIO :</label>
+  <input type="number" class="input" formControlName = "price"required>
+</div>
+<p></p>
+
+</div>
+<button type="submit" [disabled]="form.invalid">GUARDAR</button>
+</form>
+
