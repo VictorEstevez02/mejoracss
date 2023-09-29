@@ -1,29 +1,44 @@
-<form [formGroup]="form" (ngSubmit)="onSumbmit(form.value)">
+<h2>EDITAR PRODUCTO</h2>
 
-  <div>
-    <label>ID :</label>
-    <input type="number" formControlName = "id"required>
-  </div>
+<form class="form" [formGroup]="form" (ngSubmit)="onSumbmit(form.value)">
 
-  <div>
-    <label>CATEGORIA :</label>
-    <input type="text" formControlName = "category"required>
-  </div>
+  <table class="width">
 
-  <div>
-    <label>NOMBRE :</label>
-    <input type="text" formControlName = "title"required>
-  </div>
+  <td>
+    <mat-form-field class="width" class="label">
+    <mat-label class="label">ID :</mat-label>
+    <input matInput type="number"formControlName = "id"required>
+  </mat-form-field>
+  </td>
 
-  <div>
-    <label>MARCA :</label>
-    <input type="text" formControlName = "marca">
-  </div>
+  <td>
+    <mat-form-field class="width" class="label">
+    <mat-label>CATEGORIA:</mat-label>
+    <input matInput type="text"formControlName = "category"required>
+  </mat-form-field>
+  </td>
 
-  <div>
-    <label>PRECIO :</label>
-    <input type="number" formControlName = "price"required>
-  </div>
+  <td>
+    <mat-form-field class="width" class="label">
+    <mat-label>NOMBRE:</mat-label>
+    <input matInput type="text"formControlName = "title"required>
+  </mat-form-field>
+  </td>
+
+  <td>
+    <mat-form-field class="width" class="label">
+    <mat-label>MARCA:</mat-label>
+    <input matInput type="text"formControlName = "marca"required>
+  </mat-form-field>
+  </td>
+
+  <td>
+    <mat-form-field class="width" class="label">
+    <mat-label>PRECIO:</mat-label>
+    <input matInput type="number"formControlName = "price"required>
+  </mat-form-field>
+  </td>
   <p></p>
-    <button type="submit" [disabled]="form.invalid">GUARDAR</button>
+  </table>
+    <button mat-raised-button color="primary"  type="submit" [disabled]="form.invalid">GUARDAR</button>
   </form>

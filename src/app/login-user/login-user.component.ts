@@ -4,15 +4,15 @@ import {  Router, } from '@angular/router';
 import { UsuariosService } from '../usuarios.service';
 import { Usuarios } from '../usuarios';
 import { LoginService } from '../login.service';
-
+import {MatButtonModule} from '@angular/material/button';
 
 
 @Component({
   selector: 'app-login-user',
   templateUrl: './login-user.component.html',
-  styleUrls: ['./login-user.component.scss']
+  styleUrls: ['./login-user.component.scss'],
 })
-export class LoginUserComponent {
+export class LoginUserComponent implements MatButtonModule {
 
   form:FormGroup;
   error:string = ""

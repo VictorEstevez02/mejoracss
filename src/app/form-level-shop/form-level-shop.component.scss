@@ -1,20 +1,3 @@
-.div{
-  margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 100px;
-    width: 300px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.input{
-  width: 150px;
-  border-radius: 10px;
-  margin-right: 10px;
-  border-color: blue;
-}
 
 h2{
   color: blue;
@@ -22,10 +5,7 @@ h2{
   margin-right: 500px;
   width: 500px;
   margin-left: 400px;
-}
-
-label{
-  color: blue;
+  margin-top: 30px;
 }
 
 button{
@@ -36,5 +16,32 @@ button{
   border-radius: 10px;
   border-color: blue;
 }
+
+.form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 40px;
+}
+
+.width {
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+}
+
+td {
+  padding-right: 8px;
+}
+
+.label{
+  width: 232px;
+}
+
 
 

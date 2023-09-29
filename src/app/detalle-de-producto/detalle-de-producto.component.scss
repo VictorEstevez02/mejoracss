@@ -1,0 +1,27 @@
+.div{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+margin-left: 400px;
+margin-right: 400px;
+margin-top: 10px;
+width: 600px;
+border-right-width: 10px;
+color: blue;
+}
+
+h2{
+  color: blue;
+  font-size: 45px;
+  margin-right: 500px;
+  width: 600px;
+  margin-left: 400px;
+}
+
+.label{
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 10px;
+  border-color: blue;
+  margin-bottom: 20px;
+}
+

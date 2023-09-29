@@ -1,15 +1,14 @@
 import { Component,Input, Output,EventEmitter} from '@angular/core';
 import { LevelShopService } from '../level-shop.service';
 import { Producto } from '../producto';
-import { listaDeProducto } from '../listaDeProducto';
-import { filter } from 'rxjs';
+
 
 
 
 @Component({
   selector: 'app-filter',
   templateUrl: './filter.component.html',
-  styleUrls: ['./filter.component.scss']
+  styleUrls: ['./filter.component.scss'],
 })
 export class FilterComponent {
 

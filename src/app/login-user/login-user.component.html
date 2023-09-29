@@ -1,7 +1,7 @@
 
+  <h2>LEVEL SHOP</h2>
 
-  <div class="cuerpo">
-    <h2>LEVEL SHOP</h2>
+    <div class="cuerpo">
 
 <form [formGroup]="form" (ngSubmit)="login()">
 <p></p>
@@ -15,10 +15,9 @@
       <input class="input" type="password" formControlName = "password"required>
     </div>
 
-    <button  type="submit" [disabled]="form.invalid">LOGIN</button>
+    <button mat-raised-button color="primary"  type="submit" [disabled]="form.invalid">LOGIN</button>
 
     <label> {{error}} </label>
 
 </form>
 </div>
-

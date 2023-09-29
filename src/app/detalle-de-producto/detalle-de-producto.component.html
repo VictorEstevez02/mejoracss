@@ -1,14 +1,13 @@
 <h2>DETALLE DE PRODUCTO</h2>
 
 <div *ngIf="products$ | async as Producto ">
-  <p></p>
-<label> ID : {{Producto.id}} </label>
-<p></p>
-<label> PRODUCTO : {{Producto.title}} </label>
-<p></p>
-<label> MARCA : {{Producto.category}} </label>
-<p></p>
-<label> PRECIO : {{Producto.price}} </label>
+
+  <div class="div">
+<label class="label"> ID : {{Producto.id}} </label>
+<label  class="label"> PRODUCTO : {{Producto.title}} </label>
+<label class="label"> MARCA : {{Producto.category}} </label>
+<label class="label"> PRECIO : {{Producto.price}} </label>
+</div>
 
 </div>
 

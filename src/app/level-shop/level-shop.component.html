@@ -4,12 +4,13 @@
 <P></P>
 <app-filter  (filterProducts)="operacionProducto($event)"></app-filter>
 <div class="div">
-<ul *ngFor="let producto of  productos$ |async" >
-  <li>
+<mat-list-item class="lista-tarjetas" *ngFor="let producto of  productos$ |async" >
+  <img [src]='producto.image' alt="Imagen" class="img">
+  <li class="tarjeta">
     <a [routerLink]="['/detalleDeProducto',producto.id]" class="a"> {{producto.category}} {{producto.title}} {{producto.price  | currency}} </a>
     <p></p>
     <a [routerLink]="['/editarProducto',producto.id]">EDITAR</a>
   </li>
-</ul>
+</mat-list-item>
 </div>
 
