@@ -1,9 +1,13 @@
 <h2> {{title}} </h2>
 
-<app-usuarios-filter (users)="filter($event)"></app-usuarios-filter>
+<app-usuarios-filter (users)="filter($event)" ></app-usuarios-filter>
 
-<ul *ngFor="let user of users$ |async">
-  <li>
-    <a [routerLink]="['/userDetail',user.id]"> {{user.name.firstname+" "  +  user.name.lastname}} </a>
-  </li>
-   </ul>
+<div style="margin-top: 30px;">
+<nz-list nzBordered nzHeader="Usuarios" nzFooter="Footer">
+<nz-list-item *ngFor="let user of users$ |async">
+
+    <a [routerLink]="['/categorias/userDetail',user.id]"> {{user.name.firstname+" "  +  user.name.lastname}} </a>
+
+</nz-list-item>
+  </nz-list>
+</div>

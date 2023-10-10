@@ -7,6 +7,7 @@ import { Usuarios } from './usuarios';
 export class LoginService  {
 
   loginUser:boolean = false
+  logout:boolean = false
 
   constructor() { }
 
@@ -16,6 +17,14 @@ export class LoginService  {
 
  getIsLogin = () => {
   return this.loginUser
+ }
+
+ getLogOut ()  {
+  this.logout = false
+ }
+
+ getIsLogOut () : boolean {
+  return this.logout
  }
 
 }

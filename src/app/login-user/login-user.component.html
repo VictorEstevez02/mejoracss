@@ -1,23 +1,30 @@
 
-  <h2>LEVEL SHOP</h2>
+<nz-card class="card" nzTitle="LEVEL SHOP">
+<form nz-form class="login-form" [formGroup]="form" (ngSubmit)="login()">
 
-    <div class="cuerpo">
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your username!">
+      <nz-input-group nzPrefixIcon="user">
+        <input formControlName="userName" nz-input placeholder="Username" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
 
-<form [formGroup]="form" (ngSubmit)="login()">
-<p></p>
-  <div>
-    <label class="user">USER</label>
-    <input type="text"  formControlName = "user"required>
-  </div>
+  <nz-form-item>
+    <nz-form-control nzErrorTip="Please input your Password!">
+      <nz-input-group nzPrefixIcon="lock">
+        <input formControlName="password" nz-input type="password" placeholder="Password" />
+      </nz-input-group>
+    </nz-form-control>
+  </nz-form-item>
 
-    <div>
-      <label class="label">PASSWORD</label>
-      <input class="input" type="password" formControlName = "password"required>
-    </div>
-
-    <button mat-raised-button color="primary"  type="submit" [disabled]="form.invalid">LOGIN</button>
+  <nz-form-item>
+    <nz-form-control>
+      <button  class="login-form-button login-form-margin" nz-button nzType="primary" [disabled]="!form.valid">Log in</button>
+    </nz-form-control>
+  </nz-form-item>
 
     <label> {{error}} </label>
-
 </form>
-</div>
+</nz-card>
+
