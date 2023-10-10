@@ -1,31 +1,38 @@
-.link {
-  display:inline;
-  margin-left: 500px;
-  margin-right: 500px;
-  height: 300px;
-  border-left-width: 50px;
-  border-right-width: 50px;
-  color:blue;
-  margin-top: 30px;
-    width: 600px;
-    font-size: 45px;
+
+.logo {
+  width: 120px;
+  height: 40px;
+  float: left;
+  color: white;
 }
 
-h2{
-  color: blue;
-font-size: 45px;
-  width: 300px;
-  margin-left: 500px;
-  margin-right: 500px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.header-menu {
+  line-height: 64px;
 }
 
-.menu{
-  width: 250px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.outer-content {
+  padding: 0 50px;
 }
 
+nz-breadcrumb {
+  margin: 16px 0;
+}
 
+.inner-layout {
+  padding: 24px 0;
+  background: #fff;
+}
+
+.sider-menu {
+  height: 100%;
+}
+
+.inner-content {
+  padding: 0 24px;
+  min-height: 280px;
+}
+
+nz-footer {
+  text-align: center;
+}
 

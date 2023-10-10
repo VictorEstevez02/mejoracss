@@ -19,7 +19,7 @@ export class LoginUserComponent implements MatButtonModule {
 
   constructor(private formulario:FormBuilder, private route:Router, private service:UsuariosService,private loginService:LoginService){
     this.form = this.formulario.group({
-      user:["",Validators.required],
+      userName:["",Validators.required],
       password:["",Validators.required],
 
     })
@@ -28,7 +28,7 @@ export class LoginUserComponent implements MatButtonModule {
 
   login() {
     this.service.getByAllUser().subscribe((data:Usuarios[])=>{
-      const user = this.form.get("user")?.value
+      const user = this.form.get("userName")?.value
       const password = this.form.get("password")?.value
       const loginUser = data.find(u=>u.username === user && u.password === password)
 

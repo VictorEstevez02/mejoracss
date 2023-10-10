@@ -39,7 +39,7 @@ export class EditarProductoComponent {
       console.log(data)
     })
     this.form.reset()
-    this.roter.navigate(["/level"])
+    this.roter.navigate(["/categorias/level"])
 
 }
 }

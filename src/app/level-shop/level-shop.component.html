@@ -1,16 +1,15 @@
-<h2 class="titulo">{{title}} </h2>
-<P></P>
-<a href="/agregarCliente" class="link">AGREGAR CLIENTE</a>
-<P></P>
+
 <app-filter  (filterProducts)="operacionProducto($event)"></app-filter>
 <div class="div">
-<mat-list-item class="lista-tarjetas" *ngFor="let producto of  productos$ |async" >
-  <img [src]='producto.image' alt="Imagen" class="img">
+<nz-card class="lista-tarjetas"  *ngFor="let producto of  productos$ |async" >
+    <img nz-image [nzSrc] ='producto.image' alt="Imagen" class="img">
   <li class="tarjeta">
-    <a [routerLink]="['/detalleDeProducto',producto.id]" class="a"> {{producto.category}} {{producto.title}} {{producto.price  | currency}} </a>
+    <a [routerLink]="['/categorias/detalleDeProducto',producto.id]" class="a"> {{producto.category}} {{producto.title}} {{producto.price  | currency}} </a>
     <p></p>
-    <a [routerLink]="['/editarProducto',producto.id]">EDITAR</a>
+    <a [routerLink]="['/categorias/editarProducto',producto.id]">EDITAR</a>
   </li>
-</mat-list-item>
+</nz-card>
 </div>
+
+
 

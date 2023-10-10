@@ -1,6 +1,6 @@
 <h2>DETALLE DE PRODUCTO</h2>
 
-<div *ngIf="products$ | async as Producto ">
+<nz-card *ngIf="products$ | async as Producto ">
 
   <div class="div">
 <label class="label"> ID : {{Producto.id}} </label>
@@ -9,5 +9,5 @@
 <label class="label"> PRECIO : {{Producto.price}} </label>
 </div>
 
-</div>
+</nz-card>
 

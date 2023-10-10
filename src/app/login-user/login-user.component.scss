@@ -1,62 +1,21 @@
-button {
-background-color: white;
-  color: blue;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 84px;
-    height: 39px;
-    margin-top: 10px;
-
+.card {
+  width: 300px;
+  left: 500px;
+  top: 40px;
 }
 
-input {
-  width: 200;
-  height: 30;
-  border: 3px solid #3c0af2;
-  padding: 5px;
+.login-form {
+  max-width: 300px;
 }
 
-
-
-div{
-  width: 20px;
-    height: 60px;
-    padding-left: 10px;
-
+.login-form-margin {
+  margin-bottom: 16px;
 }
 
-h2{
-  color: blue;
-  margin-left: 500px;
-  margin-right: 500px;
-  width: 500px;
-  font-size: xxx-large;
-  margin-top: 30px;
+.login-form-forgot {
+  float: right;
 }
 
-
-
-
-.user {
-  color: blue;
-  margin-left: 50px;
-  margin-right: 50px;
+.login-form-button {
+  width: 100%;
 }
-
-.label {
-  color: blue;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.cuerpo {
-  margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 500px;
-    font-size: 24px;
-
-}
-
-
